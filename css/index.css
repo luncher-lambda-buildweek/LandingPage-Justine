@@ -317,3 +317,70 @@ img {
 .team-container .team-content .team-1 {
   justify-content: center;
 }
+.subscribe-container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #E6E3E3;
+  color: #1D1D1D;
+  justify-content: space-around;
+  border-bottom: 2px dashed lightblue;
+}
+.subscribe-container p {
+  padding-top: 1rem;
+}
+.subscribe-container button {
+  background-color: #07abff;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.subscribe-container input {
+  width: 200px;
+  height: 30px;
+  margin-right: 2rem;
+}
+.contact-container {
+  padding: 3rem;
+  background-color: #E6E3E3;
+  color: #1D1D1D;
+}
+.contact-container h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.contact-container .contact-form .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contact-container .contact-form .message {
+  text-align: center;
+}
+.contact-container .contact-form .message input {
+  width: 500px;
+  height: 200px;
+}
+.contact-container .contact-form input {
+  margin: 20px 0 20px 0;
+  width: 250px;
+  height: 30px;
+  margin-right: 2rem;
+}
+.contact-container .contact-form .btn-div {
+  text-align: center;
+}
+.contact-container .contact-form .btn-div .submit-form-btn {
+  background-color: #07abff;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 400px;
+  height: 50px;
+}
