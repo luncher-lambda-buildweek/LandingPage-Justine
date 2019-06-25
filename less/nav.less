@@ -1,4 +1,8 @@
 .navigation {
+
+    .menu-icon {
+        display: none;
+    }
     .flexbox-row();
     justify-content: center;
     background-color: @blue;
@@ -10,10 +14,6 @@
         font-size: 3rem;
         padding-right: 15rem;
         // padding-left: 30rem;
-    }
-    
-    nav-links{
-        padding-top: 10px;
     }
     
     a {
@@ -28,8 +28,39 @@
     .button {
         .button();
     }
+
+    @media @tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        h1 {
+            padding-right: 0;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    @media @mobile {
+        .nav-links {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+    }
+
     
 }
+
+
+// .menu-button {
+//     position: absolute;
+//     left: 20px;
+//     cursor: pointer;
+//   }
 
 
 
