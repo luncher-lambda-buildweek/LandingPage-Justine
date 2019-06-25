@@ -286,6 +286,12 @@ img {
   padding-right: 1.7rem;
   text-align: justify;
 }
+@media (max-width: 500px) {
+  .features .box-features {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .about {
   padding: 3rem;
   display: flex;
