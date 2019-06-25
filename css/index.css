@@ -164,9 +164,6 @@ img {
     padding: 0 10px;
   }
 }
-section {
-  border: 1px solid black;
-}
 .navigation {
   display: flex;
   flex-direction: row;
@@ -289,4 +286,34 @@ section {
 }
 .about img {
   margin-top: 2rem;
+}
+.team-container {
+  padding: 3rem;
+  background-color: #07abff;
+  color: #1D1D1D;
+}
+.team-container .team-header {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.team-container .team-header h2 {
+  padding-bottom: 2rem;
+}
+.team-container .team-content .team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.team-container .team-content .team img {
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-container .team-content .team h3 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.team-container .team-content .team-1 {
+  justify-content: center;
 }
