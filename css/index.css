@@ -128,10 +128,9 @@ table {
 }
 html {
   font-size: 62.5%;
-  font-family: 'PT Serif', serif;
 }
 body {
-  width: 100%;
+  font-family: 'PT Serif', serif;
 }
 h1,
 h2,
@@ -156,32 +155,138 @@ img {
   height: auto;
 }
 .container {
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+section {
+  border: 1px solid black;
 }
 .navigation {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   background-color: #07abff;
   padding: 20px;
 }
-h1 {
+.navigation h1 {
   font-family: 'Raleway', sans-serif;
   color: white;
   font-size: 3rem;
-  padding-right: 10rem;
-  padding-left: 30rem;
+  padding-right: 15rem;
 }
-nav-links {
+.navigation nav-links {
   padding-top: 10px;
 }
-a {
+.navigation a {
   font-family: 'Raleway', sans-serif;
   color: white;
   text-decoration: none;
   padding-right: 3rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
-.button {
-  background-color: blue;
+.navigation .button {
+  background-color: #07abff;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.header {
+  background-color: #E6E3E3;
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+}
+.header .header-content {
+  text-align: center;
+}
+.header .header-content h2 {
+  padding: 50px 0 40px 0;
+}
+.header .header-content button {
+  background-color: #07abff;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+.header img {
+  max-width: 100%;
+  justify-content: center;
+}
+.features {
+  background-color: #07abff;
+  padding: 3rem;
+  color: #1D1D1D;
+}
+.features .features-heading {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+.features .features-heading h2 {
+  padding-bottom: 2rem;
+}
+.features .box-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.features .box-features h3 {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.features .box-features img {
+  display: block;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+.features .box-features .box-features-1,
+.features .box-features .box-features-2 {
+  padding-right: 1.7rem;
+  text-align: justify;
+}
+.about {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  background-color: #E6E3E3;
+  height: 300px;
+}
+.about .about-content {
+  text-align: center;
+  padding-left: 2rem;
+}
+.about h2 {
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+.about button {
+  background-color: #07abff;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+.about p {
+  text-align: left;
+  flex-wrap: wrap;
+}
+.about img {
+  margin-top: 2rem;
 }

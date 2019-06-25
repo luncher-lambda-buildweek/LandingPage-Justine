@@ -1,33 +1,37 @@
 .navigation {
     .flexbox-row();
+    justify-content: center;
     background-color: @blue;
     padding: 20px;  
     
+    h1 {
+        font-family: @font-style-nav;
+        color: @white;
+        font-size: 3rem;
+        padding-right: 15rem;
+        // padding-left: 30rem;
+    }
+    
+    nav-links{
+        padding-top: 10px;
+    }
+    
+    a {
+        font-family: @font-style-nav;
+        color: @white;
+        text-decoration: none;
+        padding-right: 3rem;
+        font-size: 1.8rem;
+        
+    }
+
+    .button {
+        .button();
+    }
     
 }
 
-h1 {
-    font-family: @font-style-Raleway;
-    color: @white;
-    font-size: 3rem;
-    padding-right: 10rem;
-    padding-left: 30rem;
-}
 
-nav-links{
-    padding-top: 10px;
-}
 
-a {
-    font-family: @font-style-Raleway;
-    color: @white;
-    text-decoration: none;
-    padding-right: 3rem;
-    font-size: 1.6rem;
-    
-}
 
-.button {
-    background-color: blue;
-}
 

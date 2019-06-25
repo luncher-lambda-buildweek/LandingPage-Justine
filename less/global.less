@@ -1,10 +1,10 @@
 html {
     font-size: 62.5%;
-    font-family: @font-style;
+    
 }
 
 body {
-    width: 100%;
+    font-family: @font-style;
 }
 
 
@@ -32,6 +32,15 @@ img {
    }
    
 .container {
+    max-width: 1000px;
     width: 100%;
     margin: 0 auto;
+
+    @media @mobile {
+        padding: 0 10px;
+    }
+   }
+
+   section {
+       border: 1px solid black;
    }
