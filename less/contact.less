@@ -18,10 +18,10 @@
         .message {
             text-align: center;
 
-            input {
-                width: 500px;
-                height: 200px;
-            }
+            // input {
+            //     width: 500px;
+            //     height: 200px;
+            // }
         }
 
         input {
@@ -43,6 +43,15 @@
         }
 
         @media @tablet {
+            .info {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    text-align: center;
+                }
+            }
+
             .message {
                 input {
                     width: 300px;
