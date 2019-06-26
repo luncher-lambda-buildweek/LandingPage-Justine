@@ -4,6 +4,7 @@
     .flexbox-row();
     .header-content {
         text-align: center;
+        max-width: 80rem;;
 
         h2 {
             .h2();
@@ -22,6 +23,20 @@
     img {
         max-width: 100%;
         justify-content: center;
+    }
+
+    @media @tablet {
+        img {
+            padding-top: 60px;
+        }
+
+        .header-content {
+            button {
+                margin-top: 0;
+            }
+        }
+
+        
     }
 
     @media @mobile {
