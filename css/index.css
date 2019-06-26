@@ -323,6 +323,12 @@ img {
 .about img {
   margin-top: 2rem;
 }
+@media (max-width: 500px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .team-container {
   padding: 3rem;
   background-color: #07abff;
@@ -346,7 +352,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.team-container .team-content .team h3 {
+.team-container .team-content .team h4 {
+  padding-top: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+.team-container .team-content .team p {
   padding-bottom: 2rem;
   text-align: center;
 }
