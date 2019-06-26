@@ -218,16 +218,19 @@ img {
   }
 }
 .header {
+  padding: 3rem;
   background-color: #E6E3E3;
   display: flex;
   flex-direction: row;
-  padding: 3rem;
 }
 .header .header-content {
   text-align: center;
 }
 .header .header-content h2 {
   padding: 50px 0 40px 0;
+}
+.header .header-content p {
+  padding-right: 2rem;
 }
 .header .header-content button {
   background-color: #07abff;
@@ -269,10 +272,11 @@ img {
 .features .box-features h3 {
   padding-bottom: 2rem;
   text-align: center;
+  font-size: 2rem;
 }
 .features .box-features img {
   display: block;
-  max-width: 50%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
@@ -322,7 +326,7 @@ img {
 @media (max-width: 500px) {
   .about {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .team-container {
@@ -343,7 +347,7 @@ img {
   justify-content: space-evenly;
 }
 .team-container .team-content .team img {
-  max-width: 50%;
+  max-width: 70%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -357,8 +361,11 @@ img {
   padding-bottom: 2rem;
   text-align: center;
 }
-.team-container .team-content .team-1 {
-  justify-content: center;
+@media (max-width: 500px) {
+  .team-container .team-content .team {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .subscribe-container {
   padding: 3rem;
@@ -366,7 +373,7 @@ img {
   flex-direction: row;
   background-color: #07abff;
   color: #1D1D1D;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .subscribe-container p {
   padding-top: 1rem;
@@ -385,6 +392,8 @@ img {
   height: 30px;
   margin-right: 2rem;
 }
+@media (max-width: 500px) {
+}
 .contact-container {
   padding: 3rem;
   background-color: #E6E3E3;
@@ -401,6 +410,15 @@ img {
 }
 .contact-container .contact-form .message {
   text-align: center;
+}
+.contact-container .contact-form .message textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 20px;
 }
 .contact-container .contact-form input {
   margin: 20px 0 20px 0;

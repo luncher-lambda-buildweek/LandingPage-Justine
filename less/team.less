@@ -19,7 +19,7 @@
             justify-content: space-evenly;
 
             img {
-                max-width: 50%;
+                max-width: 70%;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
@@ -37,10 +37,17 @@
             }
         }
         
-       
-    
-        .team-1 {
-            justify-content: center;
+    }
+
+
+    @media @mobile {
+
+        .team-content{
+            .team {
+                display: flex;
+                flex-direction: column;
+            }
+        
         }
     }
 }
