@@ -55,25 +55,7 @@
             }
         }
 
-        @media @tablet {
-            .info {
-                display: flex;
-                flex-direction: column;
-                
-
-                input {
-                    // text-align: center;
-                    margin-left: 9rem;;
-                }
-            }
-
-            .message {
-                input {
-                    width: 30rem;
-                    height: 20rem;
-                }
-            }
-        }
+        
 
         // @media @mobile {
 
@@ -86,6 +68,28 @@
             
         // }
         
+    }
+
+    @media @tablet {
+        
+        .contact-form {
+             .info {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                .input {
+                margin: 1rem auto;
+                }
+            }
+
+            .message {
+                input {
+                    width: 30rem;
+                    height: 20rem;
+                }
+            }
+        }
     }
 }
 

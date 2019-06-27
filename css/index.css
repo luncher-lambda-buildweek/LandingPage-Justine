@@ -466,9 +466,10 @@ img {
   .contact-container .contact-form .info {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
-  .contact-container .contact-form .info input {
-    margin-left: 9rem;
+  .contact-container .contact-form .info .input {
+    margin: 1rem auto;
   }
   .contact-container .contact-form .message input {
     width: 30rem;
