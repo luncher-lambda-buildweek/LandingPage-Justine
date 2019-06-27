@@ -193,6 +193,9 @@ img {
   border: 1px solid white;
   border-radius: 5px;
 }
+.navigation .button a {
+  padding-right: 0;
+}
 @media (max-width: 768px) {
   .navigation {
     display: flex;
@@ -208,21 +211,6 @@ img {
 @media (max-width: 500px) {
   .navigation {
     display: none;
-  }
-  .navigation a {
-    padding-right: 0;
-  }
-  .navigation .nav-links {
-    display: none;
-  }
-  .navigation h1 {
-    padding-bottom: 0;
-  }
-  .navigation .team-menu {
-    margin-top: 2rem;
-  }
-  .navigation .team-menu button {
-    margin-left: 10rem;
   }
 }
 .nav-mobile {
@@ -277,11 +265,15 @@ img {
     background-color: #789956;
     padding: 0 2rem 0 2rem;
     margin: 3rem 0 3rem 0;
-    color: white;
     cursor: pointer;
     font-size: 1.6rem;
     border: 1px solid white;
     border-radius: 5px;
+  }
+  .nav-mobile .button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Mali', cursive;
   }
 }
 .header {
@@ -310,6 +302,11 @@ img {
   border: 1px solid white;
   border-radius: 5px;
   margin-top: 40px;
+}
+.header .header-content button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Mali', cursive;
 }
 .header img {
   max-width: 100%;
@@ -396,6 +393,11 @@ img {
   border: 1px solid white;
   border-radius: 5px;
   margin-top: 2rem;
+}
+.about button a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Mali', cursive;
 }
 .about p {
   text-align: left;
