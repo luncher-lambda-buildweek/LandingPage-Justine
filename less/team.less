@@ -1,0 +1,55 @@
+.team-container {
+    .generalPadding();
+    background-color: @blue;
+    color: @darkGrey;
+
+    .team-header {
+            text-align: center;
+            padding-bottom: 4rem;
+    
+            h2 {
+                padding-bottom: 2rem;
+            }
+        }
+    
+   
+    .team-content {
+        .team{
+            .flexbox-row();
+            justify-content: space-evenly;
+
+            img {
+                max-width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            h4 {
+                padding-top: 1rem;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            p {
+                padding-bottom: 2rem;
+                text-align: center;
+            }
+        }
+        
+    }
+
+
+    @media @mobile {
+
+        .team-content{
+            .team {
+                display: flex;
+                flex-direction: column;
+            }
+        
+        }
+    }
+}
+
+ 

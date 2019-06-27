@@ -1,0 +1,48 @@
+.features {
+    background-color: @blue;
+    .generalPadding();
+    color: @darkGrey;
+
+    .features-heading {
+        text-align: center;
+        padding-bottom: 4rem;
+
+        h2 {
+            padding-bottom: 2rem;
+            font-family: @font-style;
+        }
+    }
+
+    .box-features {
+        .flexbox-row();
+        justify-content: space-evenly;
+
+        h3 {
+            padding-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            font-family: @font-style;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+            
+        }
+
+        .box-features-1, .box-features-2 {
+            padding-right: 1.7rem;
+            text-align: justify;
+        }
+    }
+
+    @media @mobile {
+        .box-features {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

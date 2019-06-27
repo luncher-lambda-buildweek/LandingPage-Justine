@@ -1,0 +1,56 @@
+.about {
+    .generalPadding();
+    .flexbox-row();
+    background-color: @lightGrey;
+    
+    .about-content {
+        text-align: center;
+        padding-left: 2rem;
+        max-width: 80rem;
+    }
+
+    h2 {
+        padding: 2rem 0 2rem 0;
+        text-align: center;
+        font-family: @font-style;
+    }
+
+    button {
+        .button();
+        margin-top: 2rem;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: @font-style;
+        } 
+    }
+
+    p {
+        text-align: left;
+        flex-wrap: wrap;
+    }
+
+    img {
+        margin-top: 2rem;
+
+    }
+
+    @media @tablet {
+        // img {
+        //     padding-top: 100px;
+        // }
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+    // @media @tablem {
+    //     button {
+    //         margin-top: 1rem;
+    //     }
+    // }
+}

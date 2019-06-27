@@ -1,0 +1,60 @@
+.header {
+    .generalPadding();
+    background-color: @lightGrey;
+    .flexbox-row();
+    .header-content {
+        text-align: center;
+        max-width: 80rem;;
+
+        h2 {
+            .h2();
+        }
+
+        p {
+            padding-right: 2rem;
+        }
+
+        button {
+            .button();
+            margin-top: 40px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-family: @font-style;
+            }
+        }
+    }
+
+    img {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    @media @tablet {
+        // img {
+        //     padding-top: 60px;
+        // }
+
+        .header-content {
+            button {
+                margin-top: 0;
+            }
+        }
+
+        
+    }
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .header-content {
+            button {
+                margin-top: 2rem;
+            }
+        }
+    }
+
+    
+}
