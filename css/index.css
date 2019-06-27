@@ -130,7 +130,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: 'PT Serif', serif;
+  font-family: 'Mali', cursive;
 }
 h1,
 h2,
@@ -162,27 +162,30 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: #07abff;
+  background-color: #789956;
   padding: 20px;
 }
 .navigation .menu-icon {
   display: none;
 }
 .navigation h1 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Mali', cursive;
   color: white;
-  font-size: 3rem;
+  font-size: 4rem;
   padding-right: 15rem;
 }
 .navigation a {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Mali', cursive;
   color: white;
   text-decoration: none;
   padding-right: 3rem;
   font-size: 1.8rem;
 }
+.navigation a:hover {
+  color: black;
+}
 .navigation .button {
-  background-color: #07abff;
+  background-color: #789956;
   padding: 10px 20px 10px 20px;
   color: white;
   cursor: pointer;
@@ -203,33 +206,87 @@ img {
   }
 }
 @media (max-width: 500px) {
+  .navigation {
+    display: none;
+  }
   .navigation a {
     padding-right: 0;
-    padding-bottom: 1rem;
-  }
-  .navigation a:hover {
-    text-decoration: aliceblue;
   }
   .navigation .nav-links {
     display: none;
   }
-  .navigation .menu-open {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid white;
-    padding: 2rem;
-  }
-  .navigation .menu-icon {
-    display: inline;
-    text-align: left;
-  }
   .navigation h1 {
     padding-bottom: 0;
+  }
+  .navigation .team-menu {
+    margin-top: 2rem;
+  }
+  .navigation .team-menu button {
+    margin-left: 10rem;
+  }
+}
+.nav-mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .nav-mobile {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #789956;
+  }
+  .nav-mobile .nav-links2 {
+    display: none;
+    margin-top: 70px;
+    background-color: #789956;
+    border: none;
+    padding: 1rem;
+  }
+  .nav-mobile .nav-links2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .nav-mobile .nav-links2 a:hover {
+    color: black;
+  }
+  .nav-mobile h1 {
+    font-family: 'Mali', cursive;
+    color: white;
+    font-size: 4rem;
+    padding-top: 2.5rem;
+  }
+  .nav-mobile .menu-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 99;
+    border: 1px solid white;
+  }
+  .nav-mobile .menu-btn {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-mobile .menu-icon {
+    display: inline;
+    margin-top: 2.5rem;
+  }
+  .nav-mobile .button {
+    background-color: #789956;
+    padding: 0 2rem 0 2rem;
+    margin: 3rem 0 3rem 0;
+    color: white;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border: 1px solid white;
+    border-radius: 5px;
   }
 }
 .header {
   padding: 3rem;
-  background-color: #E6E3E3;
+  background-color: #F4F4F4;
   display: flex;
   flex-direction: row;
 }
@@ -239,12 +296,13 @@ img {
 }
 .header .header-content h2 {
   padding: 50px 0 40px 0;
+  font-family: 'Mali', cursive;
 }
 .header .header-content p {
   padding-right: 2rem;
 }
 .header .header-content button {
-  background-color: #07abff;
+  background-color: #789956;
   padding: 10px 20px 10px 20px;
   color: white;
   cursor: pointer;
@@ -258,9 +316,6 @@ img {
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .header img {
-    padding-top: 60px;
-  }
   .header .header-content button {
     margin-top: 0;
   }
@@ -270,9 +325,12 @@ img {
     display: flex;
     flex-direction: column-reverse;
   }
+  .header .header-content button {
+    margin-top: 2rem;
+  }
 }
 .features {
-  background-color: #07abff;
+  background-color: #789956;
   padding: 3rem;
   color: #1D1D1D;
 }
@@ -282,6 +340,7 @@ img {
 }
 .features .features-heading h2 {
   padding-bottom: 2rem;
+  font-family: 'Mali', cursive;
 }
 .features .box-features {
   display: flex;
@@ -292,6 +351,7 @@ img {
   padding-bottom: 2rem;
   text-align: center;
   font-size: 2rem;
+  font-family: 'Mali', cursive;
 }
 .features .box-features img {
   display: block;
@@ -315,7 +375,7 @@ img {
   padding: 3rem;
   display: flex;
   flex-direction: row;
-  background-color: #E6E3E3;
+  background-color: #F4F4F4;
 }
 .about .about-content {
   text-align: center;
@@ -325,9 +385,10 @@ img {
 .about h2 {
   padding: 2rem 0 2rem 0;
   text-align: center;
+  font-family: 'Mali', cursive;
 }
 .about button {
-  background-color: #07abff;
+  background-color: #789956;
   padding: 10px 20px 10px 20px;
   color: white;
   cursor: pointer;
@@ -353,7 +414,7 @@ img {
 }
 .team-container {
   padding: 3rem;
-  background-color: #07abff;
+  background-color: #789956;
   color: #1D1D1D;
 }
 .team-container .team-header {
@@ -393,7 +454,7 @@ img {
   padding: 3rem;
   display: flex;
   flex-direction: row;
-  background-color: #07abff;
+  background-color: #789956;
   color: #1D1D1D;
   justify-content: space-evenly;
 }
@@ -401,7 +462,7 @@ img {
   padding-top: 1rem;
 }
 .subscribe-container button {
-  background-color: #07abff;
+  background-color: #789956;
   padding: 10px 20px 10px 20px;
   color: white;
   cursor: pointer;
@@ -418,12 +479,13 @@ img {
 }
 .contact-container {
   padding: 3rem;
-  background-color: #E6E3E3;
+  background-color: #F4F4F4;
   color: #1D1D1D;
 }
 .contact-container h2 {
   text-align: center;
   padding-bottom: 2rem;
+  font-family: 'Mali', cursive;
 }
 .contact-container .contact-form .info {
   display: flex;
@@ -452,7 +514,7 @@ img {
   text-align: center;
 }
 .contact-container .contact-form .btn-div .submit-form-btn {
-  background-color: #07abff;
+  background-color: #789956;
   padding: 10px 20px 10px 20px;
   color: white;
   cursor: pointer;
@@ -478,6 +540,6 @@ img {
 }
 footer {
   padding: 3rem;
-  background-color: #07abff;
+  background-color: #789956;
   color: #1D1D1D;
 }
